@@ -11,4 +11,11 @@
     {% endfor %}
 </ul>
 
+<h2>Posts</h2>
+    {% for item in postList %}
+        <h3>{{item.title}}</h3>
+        <h4>{{item.subtitle}}</h4>
+        <p>{{item.content}}</p>
+    {% endfor %}
+
 <!-- {{ gamesList }} -->
