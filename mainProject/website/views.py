@@ -13,3 +13,9 @@ def hello_test(request):
 
     return render(request, 'index.html', data)
     # return HttpResponse("Welcome to the website!")
+
+def post_detail(request, id):
+    post = Post.objects.get(id = id)
+    post_detail = {'post': post}
+
+    return render(request, 'post_detail.html', post_detail)
