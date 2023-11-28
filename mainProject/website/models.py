@@ -19,3 +19,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_category_label(self):
+        return self.get_catogories_display()
