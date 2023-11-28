@@ -34,6 +34,7 @@
                             <h3>{{post.subtitle}}</h3>
 						</header>
 						<p>{{ post.content }}</p>
+                        <img src="{{ post.image.url }}" alt="post_image">
 						<ul class="actions">
 							<li><a href="{% url 'index_website' %}" class="button">Voltar</a></li>
 						</ul>
