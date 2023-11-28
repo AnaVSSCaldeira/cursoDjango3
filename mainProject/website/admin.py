@@ -2,7 +2,7 @@ from typing import Any
 from django.contrib import admin
 from django.db.models.query import QuerySet
 from django.http.request import HttpRequest
-from .models import Post
+from .models import Post, Contact
 
 
 
@@ -13,3 +13,4 @@ class PostAdmin(admin.ModelAdmin):
         return Post.objects.all() # pode filtrar se quiser
 
 admin.site.register(Post, PostAdmin)
+admin.site.register(Contact)
